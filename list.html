@@ -1,0 +1,158 @@
+html>
+<head>
+  <title>Pick A Movie</title>
+
+
+  <link rel="stylesheet" type="text/css" href="list.css" >
+  <script type="text/javascript" src="list.js">
+  </script>
+
+</head>
+
+<body onload="position()">
+
+  <div class="logo"><h1>Movie </h1>  </h1> </div>
+
+  <br/>
+  <br/>
+  <br/><br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+<p>English
+  <hr/>
+  <div class="row" >
+  <a href= # >
+  <figure class="column" style="padding:15px;"  >
+      <img src="movie posters\Arrival.jpg" id="Arrival" width=200px height=280px onclick="imageClick(this.id)">
+      <figcaption style="right:5px" >Arrival</figcaption>
+    </figure>
+  </a>
+
+  <a href=#>
+  <figure class="column" style="padding:15px;" >
+      <img src="movie posters\Avatar.jpg"   id="Avatar" width=200px height=280px onclick="imageClick(this.id)">
+      <figcaption>Avatar</figcaption>
+      </figure>
+  </a>
+
+  <a href=#>
+  <figure class="column" style="padding:15px;" >
+      <img src="movie posters\johnwick.jpg" id="john wick" width=200px height=280px onclick="imageClick(this.id)">
+      <figcaption>John Wick</figcaption>
+        </figure>
+  </a>
+  <a href=#>
+  <figure class="column" style="padding:15px;" >
+      <img src="movie posters\Dark_knight.jpg" id="Dark knight" width=200px height=280px onclick="imageClick(this.id)">
+      <figcaption>Dark knight</figcaption>
+          </figure>
+  </a>
+  <a href=#>
+  <figure class="column" style="padding:15px;" >
+      <img src="movie posters\inception.jpg" id="inception" width=200px height=280px onclick="imageClick(this.id)">
+      <figcaption>Inception</figcaption>
+        </figure>
+  </a>
+  <a href=#>
+  <figure class="column" style="padding:15px;" >
+      <img src="movie posters\fordvsferrari.jpg" id="ford vs ferrari" width=200px height=280px onclick="imageClick(this.id)">
+      <figcaption>Ford vs Ferrari</figcaption>
+          </figure>
+  </a>
+   <a href=#>
+  <figure class="column" style="padding:15px;" >
+      <img src="movie posters\The imitation game.jpg" id="imitation game" width=200px height=280px onclick="imageClick(this.id)">
+      <figcaption>The Imitation Game</figcaption>
+          </figure>
+  </a>
+
+  <a href=#>
+  <figure class="column" style="padding:15px;" onclick="imageClick(this.id)">
+      <img src="movie posters\Avengers_.jpg" id="avengers" width=200px height=280px onclick="imageClick(this.id)">
+      <figcaption>Avengers</figcaption>
+          </figure>
+  </a>
+
+  </div>
+  &nbsp;
+
+
+</p>
+
+<p>Hindi
+    <hr/>
+    <div class="row">
+    <a href=#>
+    <figure class="column" style="padding:15px;">
+        <img src="movie posters\andhadhun.jpg" id="Andhadhun"  width=200px height=280px onclick="imageClick(this.id)" >
+        <figcaption>Andhadhun</figcaption>
+      </figure>
+    </a>
+    <a href=#>
+    <figure class="column" style="padding:15px;" >
+        <img src="movie posters\three_idiots.jpg" id="three idiots" width=200px height=280px onclick="imageClick(this.id)">
+        <figcaption>3 Idiots</figcaption>
+        </figure>
+    </a>
+
+    <a href=#>
+    <figure class="column" style="padding:15px;" >
+        <img src="movie posters\rangdebasanti.jpg"  id="rang de basanti" width=200px height=280px onclick="imageClick(this.id)">
+        <figcaption>Rang De Basanti</figcaption>
+            </figure>
+   </a>
+    <a href=#>
+    <figure class="column" style="padding:15px;" >
+        <img src="movie posters\saathiya_.jpg"  id="saathiya" width=200px height=280px onclick="imageClick(this.id)">
+        <figcaption>Saathiya</figcaption>
+            </figure>
+    </a>
+
+    </div>
+    &nbsp;
+  </p>
+
+  <p>Tamil
+      <hr/>
+      <div class="row">
+      <a href=#>
+      <figure class="column" style="padding:15px;" >
+          <img src="movie posters\robot2.jpg" id="Robot" width=200px height=280px onclick="imageClick(this.id)">
+          <figcaption>Robot </figcaption>
+        </figure>
+      </a>
+      <a href=#>
+      <figure class="column" style="padding:15px;">
+          <img src="movie posters\bigil.jpg"  id="bigil"  width=200px height=280px onclick="imageClick(this.id)">
+          <figcaption>Bigil</figcaption>
+          </figure>
+      </a>
+      <a href=#>
+      <figure class="column" style="padding:15px;" >
+          <img src="movie posters\the_villain.jpg"  id="villain" width=200px height=280px onclick="imageClick(this.id)">
+          <figcaption>The Villain</figcaption>
+            </figure>
+      </a>
+      <a href=#>
+      <figure class="column" style="padding:15px;" >
+          <img src="movie posters\96.jpg" id="ninety six"  width=200px height=280px onclick="imageClick(this.id)">
+          <figcaption>'96</figcaption>
+              </figure>
+      </a>
+      </div>
+      &nbsp;
+    </p>
+
+<script type="text/javascript">
+  function imageClick(id){
+    location.href = "review.php?id="+id;
+    
+  }
+
+</script>
+
+</body>
+</html>
