@@ -11,7 +11,8 @@ $result=mysqli_fetch_array($result_set,MYSQLI_ASSOC);
 if(($result>0) && ($hash_pass == $result['password'] )){
   session_start();
   $_SESSION['id'] = $result['id'];
-  header("Location:index.php");
+  $_SESSION['name'] = $result['name'];
+  header("Location:list.html");
   
 }
   else{
@@ -23,3 +24,5 @@ if(($result>0) && ($hash_pass == $result['password'] )){
 
 
  ?>
+
+ 

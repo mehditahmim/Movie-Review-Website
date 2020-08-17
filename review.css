@@ -1,0 +1,46 @@
+img{
+    border-radius:25px;
+  }
+  
+  iframe{
+    float:middle;
+  }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+textarea {
+  width: 50%;
+  height: 75px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.review-box{
+  width: 845px;
+  padding: 20px;
+  margin-bottom: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+
+}
+    
+    .checked {
+  color: orange;
+}
+.check{
+  color:orange;
+}
+ 
+
+  
+
+/* PRESENTATION STYLES */

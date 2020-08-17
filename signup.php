@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign up for jobseekers </title>
+    <title>Sign up </title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 <style >
     
@@ -16,6 +16,10 @@ form {
 
 <body>
     <?php 
+    session_start();
+    if(isset($_SESSION['id'])){
+    header('location: list.html');
+    }
 
     if(isset($_GET['msg']) && ($_GET['msg']=="passnotmatched")) {
         echo " 
@@ -80,11 +84,12 @@ form {
                     <div class="col-sm-12">
                     <label for="inputpassword2">Re-enter Password</label>
                     <input type="password" class="form-control" name="pass2" id="inputpassword2" placeholder="Re-enter password"required>
+                     <BR>
+                    <a href="signin.php">Already have an account? sign in</a> 
                     </div>
-                   
-                    
+                      
                 </div>
-             
+                
                 
                 
                 <button class="btn btn-success" type="submit" name = 'create'  id="reg" value="submit">Register</button>
